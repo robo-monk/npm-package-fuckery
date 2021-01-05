@@ -7,7 +7,10 @@
 [![Coverage Status](https://img.shields.io/coveralls/robo-monk/test_node.svg?style=flat-square)](https://coveralls.io/github/robo-monk/test_node)
 [![NPM](https://img.shields.io/npm/dt/test_node.svg?style=flat-square)](https://www.npmjs.com/package/test_node)
 
-> fuckery
+```
+git clone git@github.com:robo-monk/npm-package-fuckery.git
+```
+> change some stuff up but this boilerplate appears to be solid.
 
 ### Usage
 
