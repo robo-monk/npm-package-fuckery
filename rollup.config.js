@@ -1,13 +1,13 @@
 import babel from 'rollup-plugin-babel';
 import nodeResolve from 'rollup-plugin-node-resolve';
-import uglify from 'rollup-plugin-uglify-es';
+import { terser } from "rollup-plugin-terser";
 import filesize from 'rollup-plugin-filesize';
 import commonjs from 'rollup-plugin-commonjs';
 import json from '@rollup/plugin-json';
 // import builtins from 'rollup-plugin-node-builtins';
 // import nodeGlobals from 'rollup-plugin-node-globals';
 
-const name = `leopardTieClient`;
+const name = `pragmajs`;
 
 const plugins = [
   babel(),
@@ -26,7 +26,7 @@ const plugins = [
 ];
 
 const isProd = process.env.NODE_ENV === `production`;
-if (isProd) plugins.push(uglify());
+if (isProd) plugins.push(terser());
 
 export default {
   plugins,
